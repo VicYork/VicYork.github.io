@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <head>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
+    </head>
+    <body>
+        <div class="contents text-center">
+
+            <!--Form for Addition-->
+            <h1>Sum!</h1>
+            <div class="well">
+                <form id="input-form" style="padding-bottom: 20px;">
+                    <input type="text" id="num-one"/>
+                    <!--TODO 1 : Create an input element of type number with id num-two -->
+                    <input type="text" id="num-two"/>
+                    <input type="submit" value="Submit"/>
+                </form>
+                <div id="result"></div>
+            </div>
+            <button id="btn-clear-form" type="button" class="btn btn-primary">Clear</button>
+
+            <!--Forms for Subtraction-->
+            <h1>Sub!</h1>
+            <div class="well">
+                <form id="input-form2" style="padding-bottom: 20px;">
+                    <input type="text" id="num-three"/>
+                    <input type="text" id="num-four"/>
+                    <input type="submit" value="Submit"/>
+                </form>
+                <div id="result2"></div>
+            </div>
+            <button id="btn-clear-form2" type="button" class="btn btn-primary">Clear</button>
+
+        </div>
+        <script>
+
+            //  Method A  //
+            $(document).ready(function() {
+                function onFormSubmit(e) {
+                    event.preventDefault();
+
+                    // TODO 2 : create var a, and assign to the expression: document.getElementById("num-one").value;
+                    var a = document.getElementById("num-one").value;
+
+                    // TODO 3 : create var b, and assign it to the value of the element with id "num-two" (see TODO 1 for example)
+                    var b = document.getElementById("num-two").value;
+
+                    // TODO 4: create var result and assign to it the sum of a and b //
+                    var result = parseFloat(a) + parseFloat(b);
+
+                    document.getElementById("result").innerHTML = result;
+                }
+
+                var $form = $("#input-form");
+                $form.on('submit', onFormSubmit);
+                $btnClearFrom = $("#btn-clear-form").on('click', clearForm);
+                function clearForm(){
+                    $("#input-form").find("input[type=number]").val("");
+                    $("#result").empty();
+                }
+
+                function onFormSubmit2(e) {
+                    event.preventDefault();
+
+                    // TODO 2 : create var a, and assign to the expression: document.getElementById("num-one").value;
+                    var c = document.getElementById("num-three").value;
+
+                    // TODO 3 : create var b, and assign it to the value of the element with id "num-two" (see TODO 1 for example)
+                    var d = document.getElementById("num-four").value;
+
+                    // TODO 4: create var result and assign to it the sum of a and b //
+                    var result2 = parseFloat(c) - parseFloat(d);
+
+                    document.getElementById("result2").innerHTML = result2;
+                }
+
+                var $form2 = $("#input-form2");
+                $form2.on('submit', onFormSubmit2);
+                $btnClearFrom = $("#btn-clear-form2").on('click', clearForm2);
+                function clearForm2(){
+                    $("#input-form2").find("input[type=number]").val("");
+                    $("#result2").empty();
+                }
+
+            });
+
+            //  Method B  //
+            /*$(document).ready(function() {
+                function onFormSubmit(e) {
+                    event.preventDefault();
+
+                    // TODO 2 : create var a, and assign to the expression: document.getElementById("num-one").value;
+                    var a = document.getElementById("num-one").value;
+                    var c = document.getElementById("num-three2").value;
+
+                    // TODO 3 : create var b, and assign it to the value of the element with id "num-two" (see TODO 1 for example)
+                    var b = document.getElementById("num-two").value;
+                    var d = document.getElementById("num-four2").value;
+
+                    // TODO 4: create var result and assign to it the sum of a and b //
+                    var result = parseFloat(a) + parseFloat(b);
+                    var result2 = parseFloat(c) - parseFloat(d);
+
+                    document.getElementById("result").innerHTML = result;
+                    document.getElementById("result2").innerHTML = result2;
+
+                }
+
+                var $form = $("#input-form");
+                var $form2 = $("#input-form2");
+                $form.on('submit', onFormSubmit);
+                $form2.on('submit', onFormSubmit);
+                $btnClearFrom = $("#btn-clear-form").on('click', clearForm);
+                $btnClearFrom = $("#btn-clear-form2").on('click', clearForm);
+
+                function clearForm(){
+                    $("#input-form").find("input[type=number]").val("");
+                    $("#input-form2").find("input[type=number]").val("");
+                    $("#result").empty();
+                    $("#result2").empty();
+                }
+            });*/
+
+            //  Method C  //
+            /*$(document).ready(function() {
+                function onFormSubmitAddition(e) {
+                    event.preventDefault();
+                    var a = document.getElementById("num-one").value,
+                        b = document.getElementById("num-two").value,
+                        resultA = parseFloat(a) + parseFloat(b);
+                    document.getElementById("resultA").innerHTML = resultA;
+                }
+
+                function onFormSubmitSubtraction(e) {
+                    event.preventDefault();
+                    var c = document.getElementById("num-three").value,
+                        d = document.getElementById("num-four").value,
+                        resultB = parseFloat(c) - parseFloat(d);
+                    document.getElementById("resultB").innerHTML = resultB
+
+                }
+
+
+                var $formA = $("#input-formA"),
+                    $formB = $("#input-formB");
+                $formA.on('submit', onFormSubmitAddition());
+                $formB.on('submit', onFormSubmitSubtraction());
+                $btnClearFrom = $("#btn-clear-formA").on('click', clearForm);
+                $btnClearFrom = $("#btn-clear-formB").on('click', clearForm);
+                function clearForm(){
+                    $("#input-formA").find("input[type=number]").val("");
+                    $("#input-formB").find("input[type=number]").val("");
+                    $("#resultA").empty();
+                    $("#resultB").empty();
+                }
+            });*/
+
+        </script>
+    </body>
+</html>

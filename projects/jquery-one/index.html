@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>jQuery One</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+</head>
+
+<body>
+<div class="container">
+    <h1>jQuery One</h1>
+    <section>
+        <ul>
+            <li>You will code in this index.html file, save and refresh to see the results of your work.</li>
+            <li><a href="directions.html" target="_blank">Directions...</a></li>
+        </ul>
+    </section>
+    <!-- YOUR HTML MARKUP GOES BELOW THIS COMMENT  -->
+    <div id="everything">
+        <h1>A heading!</h1>
+
+        <p>Here's some text!</p>
+
+        <p>Here's a second set of text!</p>
+
+        <div class="holder">
+            <ul>
+                <li>List Item 1</li>
+                <li>List Item 2</li>
+                <li>List Item 3</li>
+            </ul>
+        </div>
+        <div class="holder">
+            <ul>
+                <li>List Item 4</li>
+                <li>List Item 5</li>
+                <li>List Item 6</li>
+            </ul>
+        </div>
+    </div>
+    <!-- YOUR HTML MARKUP GOES ABOVE THIS COMMENT  -->
+    <script>
+        var $allDivs = $("div");
+        console.log($allDivs);
+        var $allUls = $("ul");
+        console.log($allUls);
+        var $allPs = $("p");
+        $allPs.css("color", "blue");
+        $(".container").css("background-color", "red");
+        $(".holder").css("border", "1px solid black");
+        $("ul li").css("font-weigth", "bold");
+        $(".container").prepend("<div>Hello</div>");
+        $(".container").append("<div>Goodbye</div>");
+        $(".holder:nth-last-of-type(2)").prepend("<div class='first'>first</div>");
+        $(".holder:nth-last-of-type(1)").prepend("<div class='last'>second</div>");
+        var $newDetachedDiv = $("<div><p>Here's even more stuff</p></div>");
+        $newDetachedDiv.css("background-color", "green");
+        $(".container").append($newDetachedDiv);
+//        $('div').remove();
+//        $('#container').empty();
+//        var orphanNode = $('#target').detach();
+    </script>
+</div>
+</body>
+
+</html>

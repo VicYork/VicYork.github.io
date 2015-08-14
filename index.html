@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="styles/styles.css"/>
+    <title>Victor's Website</title>
+</head>
+<body>
+<div id="all-contents">
+    <nav></nav>
+    <main></main>
+</div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+<script>
+    $(document).ready(initialize);
+    $(window).on('hashchange', function () {
+        loadTemplate(location.hash.replace("#", ""));
+    });
+    function initialize() {
+        var template;
+        $("nav").load("nav.html");
+        template = window.location.hash.replace("#", "");
+        if (!template) {
+            template = "home"
+        }
+        loadTemplate(template)
+    }
+    function loadTemplate(template) {
+        $("main").load(template + ".html");
+    }
+</script>
+</body>
+</html>
