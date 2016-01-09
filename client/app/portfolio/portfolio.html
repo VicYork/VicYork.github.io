@@ -1,88 +1,115 @@
 <!-- Portfolio view -->
-<div class="container">
 
-  <div class="row">
+<nvbar></nvbar>
 
-    <div class="col-l-9" id="projects-list">
+<div class="row">
+
+  <div class="col l10" id="projects-list">
 
     <!-- Teserat -->
-    <div class="card large">
-      <div class="card-image waves-effect waves-block waves-light">
-        <img class="activator" src="images/office.jpg">
-      </div>
-      <div class="card-content">
+    <div id="Teserat" class="section scrollspy"></div>
+    <div class="section">
+      <div class="card large">
+        <div class="card-image waves-effect waves-block waves-light">
+          <img class="activator" src="images/office.jpg">
+        </div>
+        <div class="card-content">
         <span class="card-title activator grey-text text-darken-4">Card Title<i
           class="material-icons right">more_vert</i></span>
-        <p><a href="#">This is a link</a></p>
-      </div>
-      <div class="card-reveal">
+          <p><a href="#">This is a link</a></p>
+        </div>
+        <div class="card-reveal">
         <span class="card-title grey-text text-darken-4">Card Title<i
           class="material-icons right">close</i></span>
-        <p>Here is some more information about this product that is only
-          revealed once clicked on.</p>
+          <p>Here is some more information about this product that is only
+            revealed once clicked on.</p>
+        </div>
       </div>
     </div>
 
     <!-- Culturalyst -->
-    <div class="card large">
-      <div class="card-image waves-effect waves-block waves-light">
-        <img class="activator" src="images/office.jpg">
-      </div>
-      <div class="card-content">
+    <div id="Culturalyst" class="divider scrollspy"></div>
+    <div class="section">
+      <div class="card large">
+        <div class="card-image waves-effect waves-block waves-light">
+          <img class="activator" src="images/office.jpg">
+        </div>
+        <div class="card-content">
         <span class="card-title activator grey-text text-darken-4">Card Title<i
           class="material-icons right">more_vert</i></span>
-        <p><a href="#">This is a link</a></p>
-      </div>
-      <div class="card-reveal">
+          <p><a href="#">This is a link</a></p>
+        </div>
+        <div class="card-reveal">
         <span class="card-title grey-text text-darken-4">Card Title<i
           class="material-icons right">close</i></span>
-        <p>Here is some more information about this product that is only
-          revealed once clicked on.</p>
+          <p>Here is some more information about this product that is only
+            revealed once clicked on.</p>
+        </div>
       </div>
     </div>
 
     <!-- Seamless -->
-    <div class="card large">
-      <div class="card-image waves-effect waves-block waves-light">
-        <img class="activator" src="images/office.jpg">
-      </div>
-      <div class="card-content">
+    <div id="Seamless" class="divider scrollspy"></div>
+    <div class="section">
+      <div class="card large">
+        <div class="card-image waves-effect waves-block waves-light">
+          <img class="activator" src="images/office.jpg">
+        </div>
+        <div class="card-content">
         <span class="card-title activator grey-text text-darken-4">Card Title<i
           class="material-icons right">more_vert</i></span>
-        <p><a href="#">This is a link</a></p>
-      </div>
-      <div class="card-reveal">
+          <p><a href="#">This is a link</a></p>
+        </div>
+        <div class="card-reveal">
         <span class="card-title grey-text text-darken-4">Card Title<i
           class="material-icons right">close</i></span>
-        <p>Here is some more information about this product that is only
-          revealed once clicked on.</p>
+          <p>Here is some more information about this product that is only
+            revealed once clicked on.</p>
+        </div>
       </div>
     </div>
 
     <!-- Finn -->
-    <div class="card large">
-      <div class="card-image waves-effect waves-block waves-light">
-        <img class="activator" src="images/office.jpg">
-      </div>
-      <div class="card-content">
+    <div id="Finn" class="divider scrollspy"></div>
+    <div class="section">
+      <div class="card large">
+        <div class="card-image waves-effect waves-block waves-light">
+          <img class="activator" src="images/office.jpg">
+        </div>
+        <div class="card-content">
         <span class="card-title activator grey-text text-darken-4">Card Title<i
           class="material-icons right">more_vert</i></span>
-        <p><a href="#">This is a link</a></p>
-      </div>
-      <div class="card-reveal">
+          <p><a href="#">This is a link</a></p>
+        </div>
+        <div class="card-reveal">
         <span class="card-title grey-text text-darken-4">Card Title<i
           class="material-icons right">close</i></span>
-        <p>Here is some more information about this product that is only
-          revealed once clicked on.</p>
+          <p>Here is some more information about this product that is only
+            revealed once clicked on.</p>
+        </div>
       </div>
     </div>
-
-    </div>
-
-    <div class="col-l-3">
-      this is the side bar
-    </div>
-
   </div>
 
+  <div class="pin-top" id="toc">
+    <div class="row">
+      <div class="col hide-on-small-only m3 l2">
+        <ul class="section table-of-contents">
+          <li><a href="#Teserat">Teserat</a></li>
+          <li><a href="#Culturalyst">Culturalyst</a></li>
+          <li><a href="#Seamless">Seamless</a></li>
+          <li><a href="#Finn">Finn</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    $(document).ready(function() {
+      $('.scrollspy').scrollSpy();
+    });
+  </script>
+
 </div>
+
+<fter></fter>
