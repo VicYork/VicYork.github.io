@@ -6,7 +6,7 @@ angular.module('vicyork')
     $stateProvider
       .state('home', {
         url: '/',
-        templateUrl: 'client/app/home/portfolio.html',
+        templateUrl: 'client/app/home/home.html',
         controller: 'HomeController',
         controllerAs: 'vm'
       })
