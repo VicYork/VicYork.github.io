@@ -37,12 +37,8 @@
     <!-- Table of Contents -->
     <div class="col l2">
       <div>
-        <ul>
-          <li>alpha</li>
-          <li>beta</li>
-          <li>gama</li>
-          <li>delta</li>
-          <li>epsilon</li>
+        <ul ng-repeat="blog in blogs">
+          <li>{{blog.title_short}}</li>
         </ul>
       </div>
     </div>
