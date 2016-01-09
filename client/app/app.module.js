@@ -1,8 +1,8 @@
 'use strict';
 
-angular.module('vicyork', [])
-  .config(function($urlRouterProvider, $stateProvider, $locationProvider) {
+angular.module('vicyork', ['ui.router'])
+  .config(function($urlRouterProvider) {
+    // For any unmatched url, redirect to /
     $urlRouterProvider
       .otherwise('/');
-    $locationProvider.html5Mode(true);
   });
