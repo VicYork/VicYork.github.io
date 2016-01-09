@@ -1,0 +1,54 @@
+<!-- Portfolio view -->
+
+<nvbar></nvbar>
+
+<div>
+
+  <div class="row">
+
+    <div class="col l10">
+      <!-- blogs -->
+      <div class="container">
+        <!-- Blogs -->
+        <div class="row">
+          <div ng-repeat="blog in blogs">
+            <div>
+              <div>
+                <h3>{{blog.title}}</h3>
+                <div>
+                  <p>{{blog.date}}</p>
+                  <p>{{blog.tags}}</p>
+                </div>
+              </div>
+              <div>
+                <p> {{blog.content}}</p>
+              </div>
+
+              <div class="section"></div>
+              <div class="section"></div>
+              <div class="section"></div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Table of Contents -->
+    <div class="col l2">
+      <div>
+        <ul>
+          <li>alpha</li>
+          <li>beta</li>
+          <li>gama</li>
+          <li>delta</li>
+          <li>epsilon</li>
+        </ul>
+      </div>
+    </div>
+
+  </div>
+
+</div>
+
+<fter></fter>
