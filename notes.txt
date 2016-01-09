@@ -35,3 +35,8 @@ Q: 1-3 proud moments!
 Q: 1-3 things you've learned
  - how to expand my engineering perspective!
  - the full stack!
+
+##
+
+Q: Lessons learned from your time at hack reactor.
+ -
