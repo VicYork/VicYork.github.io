@@ -1,0 +1,85 @@
+<!-- Hero view -->
+<div>
+
+  <div style="position: absolute; left: 0px; top: 0px; z-index: 1;"
+       class="container">
+    <div class="row">
+      <h1>
+        Want to learn more?
+      </h1>
+    </div>
+  </div>
+
+  <!-- Fullscreen slider -->
+  <div>
+    <div class="slider">
+      <ul class="slides">
+        <li>
+          <a ui-sref="home">
+            <!-- an unsplash image -->
+            <img src="client/assets/img/unsplash-sliders/unsplash-img-00.jpeg">
+            <div class="caption center-align">
+              <h3>This is our big Tagline!</h3>
+              <h5 class="light grey-text text-lighten-3">Here's our small
+                slogan.</h5>
+            </div>
+          </a>
+        </li>
+        <li>
+          <a ui-sref="home">
+            <!-- an unsplash image -->
+            <img src="client/assets/img/unsplash-sliders/unsplash-img-06.jpeg">
+            <div class="caption left-align">
+              <h3>Left Aligned Caption</h3>
+              <h5 class="light grey-text text-lighten-3">Here's our small
+                slogan.</h5>
+            </div>
+          </a>
+        </li>
+        <li>
+          <a ui-sref="home">
+            <!-- an unsplash image -->
+            <img src="client/assets/img/unsplash-sliders/unsplash-img-03.jpeg">
+            <div class="caption right-align">
+              <h3>Right Aligned Caption</h3>
+              <h5 class="light grey-text text-lighten-3">Here's our small
+                slogan.</h5>
+            </div>
+          </a>
+        </li>
+        <li>
+          <a ui-sref="home">
+            <!-- an unsplash image -->
+            <img src="client/assets/img/unsplash-sliders/unsplash-img-04.jpeg">
+            <div class="caption center-align">
+              <h3>This is our big Tagline!</h3>
+              <h5 class="light grey-text text-lighten-3">Here's our small
+                slogan.</h5>
+            </div>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- Slider scripts -->
+  <script>
+    $(document).ready(function() {
+      var fullHeight = $(window).height();
+
+      $('.slider').slider({
+        indicators: false,
+        full_width: true,
+        height: fullHeight
+      });
+
+      $('.slider').slider('pause');
+      // Start slider
+      $('.slider').slider('start');
+      // Next slide
+      $('.slider').slider('next');
+      // Previous slide
+      $('.slider').slider('prev');
+    });
+  </script>
+</div>

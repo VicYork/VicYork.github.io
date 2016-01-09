@@ -5,11 +5,13 @@ angular.module('vicyork')
     // Home states
     $stateProvider
       .state('home', {
-        url: '/',
+        url: '/home',
         templateUrl: 'client/app/home/home.html',
         controller: 'HomeController',
         controllerAs: 'vm'
       })
+      //Sub states if needed
+
       /*.state('home.main', {
        url: "/",
        templateUrl: "partials/state1.html"
