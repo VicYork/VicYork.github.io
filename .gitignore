@@ -49,3 +49,6 @@ crashlytics-build.properties
 
 # Bower
 #client/assets/lib/
+
+# OS X
+.DS_Store
