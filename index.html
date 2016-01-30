@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en" ng-app="vicyork">
+  <head>
+    <meta charset="UTF-8">
+    <!-- materialize:start -->
+    <!-- Import Google Icon Font -->
+    <link href="http://fonts.googleapis.com/icon?family=Material+Icons"
+          rel="stylesheet">
+    <!-- Import materialize.css -->
+    <link type="text/css" rel="stylesheet" media="screen,projection"
+          href="client/assets/lib/Materialize/dist/css/materialize.min.css"/>
+
+    <!-- Let browser know website is optimized for mobile -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <!-- materialize:end -->
+
+    <!-- styles -->
+    <link rel="stylesheet" href="client/assets/styles/main.css">
+    <!--<link rel="stylesheet" href="client/app/home/home.css">-->
+    <!--<link rel="stylesheet" href="client/app/portfolio/portfolio.css">-->
+    <!--<link rel="stylesheet" href="client/app/blog/blog.css">-->
+    <!--<link rel="stylesheet" href="client/app/about/about.css">-->
+
+    <!-- font awesome -->
+    <link rel="stylesheet"
+          href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
+    <title>Vic York-Carter</title>
+  </head>
+  <body>
+
+    <!-- CONTENT:START -->
+    <main>
+      <!-- The main view's container -->
+      <div>
+        <!-- The main view -->
+        <div ui-view></div>
+      </div>
+    </main>
+    <!-- CONTENT:START -->
+
+    <!-- lib: non-min - start -->
+    <!-- Import jQuery before materialize.js -->
+    <script src="client/assets/lib/jquery/dist/jquery.js"></script>
+    <script
+      src="client/assets/lib/Materialize/dist/js/materialize.min.js"></script>
+    <script src="client/assets/lib/angular/angular.js"></script>
+    <script
+      src="client/assets/lib/angular-ui-router/release/angular-ui-router.js"></script>
+    <script src="client/assets/lib/lodash/lodash.js"></script>
+
+    <!-- app -->
+    <script src="client/app/app.module.js"></script>
+    <!--<script src="client/app/app.controller.js"></script>-->
+
+    <!-- app components / angular modules -->
+    <!-- Hero -->
+    <script src="client/app/hero/hero.js"></script>
+    <script src="client/app/hero/hero.controller.js"></script>
+    <!-- Home -->
+    <script src="client/app/home/home.js"></script>
+    <script src="client/app/home/home.controller.js"></script>
+    <!-- Portfolio -->
+    <script src="client/app/portfolio/portfolio.js"></script>
+    <script src="client/app/portfolio/portfolio.controller.js"></script>
+    <!-- Blog -->
+    <script src="client/app/blog/blog.js"></script>
+    <script src="client/app/blog/blog.controller.js"></script>
+    <!-- About -->
+    <script src="client/app/about/about.js"></script>
+    <script src="client/app/about/about.controller.js"></script>
+
+    <!-- app shared components / angular directives -->
+    <!-- navbar -->
+    <script src="client/shared/nav/navbar.controller.js"></script>
+    <script src="client/shared/nav/navbar.directive.js"></script>
+    <!-- footer -->
+    <script src="client/shared/footer/footer.controller.js"></script>
+    <script src="client/shared/footer/footer.directive.js"></script>
+
+    <!-- Scripts / non-angular scripts -->
+    <script src="client/assets/scripts/main.js"></script>
+
+  </body>
+</html>

@@ -1,0 +1,31 @@
+{
+  "name": "vicyork.github.io",
+  "homepage": "vicyork.github.io",
+  "authors": [
+    "Victor York <victor.a.york@gmail.com>"
+  ],
+  "description": "A Beautiful Mind?",
+  "main": "index.html",
+  "moduleType": [
+    "amd",
+    "es6",
+    "globals",
+    "node"
+  ],
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "~2.2.0",
+    "angular": "~1.4.8",
+    "lodash": "~3.10.1",
+    "angular-ui-router": "~0.2.15",
+    "Materialize": "materialize#~0.97.5"
+  }
+}
